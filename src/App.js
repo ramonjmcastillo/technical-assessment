@@ -14,8 +14,8 @@ import {
   headPhoneOptions,
 } from "./config";
 import BackContainer from "./components/BackContainer";
-import ProductHeading from "./components/ProductHeading";
-import ProductTabs from "./components/ProductTabs";
+import ProductHeading from "./components/ProductDetails/ProductHeading";
+import ProductTabs from "./components/ProductDetails/ProductTabs";
 
 function App() {
   const [selectedColor, setSelectedColor] = useState("Black");
