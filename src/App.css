@@ -7,8 +7,7 @@
 }
 
 .product-details-container {
-    padding:16px;    /* font-family: 'Paytone One', sans-serif; */
-    letter-spacing:
+    padding:16px;
 }
 
 .back-container {
@@ -125,9 +124,7 @@
 
 
 /* 
-
 Responsiveness
-
 */
 
 @media (min-width:768px) and (max-width: 1024px) {
@@ -152,8 +149,6 @@ Responsiveness
         background-color: white;
         padding:64px;
         padding-top:32px;
-  
-      
     }
 
     .content-container > .body-container {
