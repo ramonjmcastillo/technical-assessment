@@ -5,7 +5,7 @@
 }
 
 
-.App {
+.product-details-container {
     padding:16px;    /* font-family: 'Paytone One', sans-serif; */
 }
 
@@ -20,7 +20,8 @@
 
 .back-container > svg {
     height:16px;
-    margin-right:16px
+    margin-right:16px;
+    cursor:pointer
 }
 
 .heading-container {
@@ -50,7 +51,7 @@
 
 .product-details-price {
     font-weight: bold;
-    margin-bottom:24px;
+    margin-bottom:48px;
     font-size: 24px;
     display: flex;
 
@@ -66,6 +67,7 @@
 .product-details-color {
     display:flex;
     flex-direction: column;   
+
 }
 
 .picture {
@@ -93,6 +95,13 @@
     border-color:rgba(203, 203, 203, 0.3);
 }
 
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .App {
+        padding:64px;
+    }
+}
+
 @media
   (min-width: 1025px) {
     .App {
@@ -106,13 +115,13 @@
     .content-container {
         display:flex;
         flex-direction: column;
-        width:50%;
+        width:45%;
         background-color: white;
         padding:64px;
         padding-top:32px;
       
     }
     .picture {
-        width:50%;
+        width:55%;
     }
   }
