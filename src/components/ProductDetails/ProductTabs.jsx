@@ -42,22 +42,17 @@ const ProductTabs = ({
       </>
 
       <p className="product-details-price">
-        {productCurrentPrice}
+        ${productCurrentPrice}
         <span style={{ textDecoration: "line-through" }}>
-          {productOriginalPrice}
+          ${productOriginalPrice}
         </span>
       </p>
 
       <div className="product-details-color">
-        <p style={{ marginBottom: "12px" }}> COLORS</p>
+        <p> COLORS</p>
         <select
+          className="color-dropdown"
           onChange={(e) => setSelectedColor(e.target.value)}
-          style={{
-            width: "100px",
-            height: "32px",
-            border: "1px solid gray",
-            marginBottom: "32px",
-          }}
         >
           {headPhoneOptions?.map((option) => {
             return (
@@ -73,7 +68,7 @@ const ProductTabs = ({
             onClick={() => addToCart()}
             className="product-details-button"
             type="button"
-            disabled={addedToCart}
+            disabled={addedToCart || loading}
           >
             {loading ? (
               <p> Loading </p>
